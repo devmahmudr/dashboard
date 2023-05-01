@@ -1,0 +1,27 @@
+.btn {
+  background: transparent;
+  outline: none;
+  border: none;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  letter-spacing: 0.2px;
+  color: #a4a6b3;
+  text-align: start;
+  padding: 18px 22px;
+  column-gap: 10px;
+  display: flex;
+  align-items: center;
+  border-left: 3px solid transparent;
+  .white-icon{
+    fill: #9FA2B4;
+  }
+  &:hover{
+    border-left: 3px solid #DDE2FF;
+    background: rgba(159, 162, 180, 0.08);
+    color: #DDE2FF;
+    .white-icon{
+      fill: #DDE2FF;
+    }
+  }
+}

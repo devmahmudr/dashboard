@@ -1,0 +1,31 @@
+.main-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.main-top-title {
+  font-weight: 700;
+  font-size: 19px;
+  line-height: 24px;
+  letter-spacing: 0.4px;
+  color: #252733;
+}
+.sort-filter {
+  display: flex;
+  align-items: center;
+}
+.sort-filter p {
+  display: flex;
+  align-items: center;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 0.2px;
+  color: #4b506d;
+  img{
+    margin-right: 9px;
+  }
+}
+.sort-filter p:nth-child(1){
+    margin-right: 34px;
+}
