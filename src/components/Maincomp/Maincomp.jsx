@@ -1,7 +1,7 @@
-import "./maincomp.scss";
 import filter from "../../assets/icons/filter.svg";
 import sort from "../../assets/icons/sort.svg";
-const Maincomp = ({ avatar, title, date, name, time, priority }) => {
+import "./maincomp.scss"
+const Maincomp = ({ title, date, name, time, priority, avatar }) => {
   return (
     <div>
       <div className="main-top">
@@ -31,7 +31,7 @@ const Maincomp = ({ avatar, title, date, name, time, priority }) => {
             <tbody>
               <tr>
                 <td className="ticket-detail">
-                  {avatar}
+                  <img src={avatar} alt="" />
                   <p>{title}</p>
                   <p>Updated 1 day ago</p>
                 </td>
@@ -52,13 +52,4 @@ const Maincomp = ({ avatar, title, date, name, time, priority }) => {
     </div>
   );
 };
-const High = () => {
-  return <span className="high">High</span>;
-};
-const Low = () => {
-  return <span className="low">Low</span>;
-};
-const Normal = () => {
-  return <span className="normal">Normal</span>;
-};
-export{ Maincomp, Normal, Low, High };
+export default Maincomp;

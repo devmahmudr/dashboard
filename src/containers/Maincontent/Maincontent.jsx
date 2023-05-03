@@ -9,28 +9,25 @@ import Robert from "../../assets/avatars/robert.png";
 import Sam from "../../assets/avatars/sam.png";
 import Steve from "../../assets/avatars/steve.png";
 import Tom from "../../assets/avatars/tom.png";
-import { Low, Normal, High } from "../../components/Maincomp/Maincomp";
 
 const DtBase = [
   {
-    avatar: { Tom },
-    title: "Contact Email not Linked",
-    name: "Tom Cruise",
+    avatar: Chris,
+    name: "Chris",
+    priority: "High",
     date: "May 26, 2019",
     time: "6:30 PM",
-    priority: { High },
   },
   {
-    avatar: { Matt },
-    title: "Adding Images to Featured Posts",
-    name: "Matt Damon",
+    avatar: Tom,
+    name: "Chris",
+    priority: "High",
     date: "May 26, 2019",
-    time: "8:00 AM",
-    priority: { Low },
+    time: "6:30 PM",
   },
 ];
 
-const Maincontent = () => {
+const Table = () => {
   return (
     <div className="maincontainer">
       {DtBase.map((e) => {
@@ -38,11 +35,10 @@ const Maincontent = () => {
           <Maincomp
             key={Math.random()}
             avatar={e.avatar}
-            title={e.title}
-            naem={e.name}
+            name={e.name}
+            priority={e.priority}
             date={e.date}
             time={e.time}
-            priority={e.priority}
           />
         );
       })}
@@ -50,4 +46,4 @@ const Maincontent = () => {
   );
 };
 
-export default Maincontent;
+export default Table;

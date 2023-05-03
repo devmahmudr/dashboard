@@ -7,12 +7,10 @@ const Search = () => {
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
-      <circle cx="6.5" cy="6.5" r="5.75" stroke="#C5C7CD" stroke-width="1.5" />
+      <circle cx="6.5" cy="6.5" r="5.75" stroke="#C5C7CD"/>
       <path
         d="M11 11L15 15"
         stroke="#C5C7CD"
-        stroke-width="1.5"
-        stroke-linecap="round"
       />
     </svg>
   );
@@ -39,8 +37,6 @@ const SiteLogoImg = () => {
           y2="23"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="white" stop-opacity="0.7" />
-          <stop offset="1" stop-color="white" />
         </linearGradient>
       </defs>
     </svg>
