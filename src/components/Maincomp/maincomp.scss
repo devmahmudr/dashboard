@@ -1,31 +1,102 @@
 .main-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.main-top-title {
+  font-weight: 700;
+  font-size: 19px;
+  line-height: 24px;
+  letter-spacing: 0.4px;
+  color: #252733;
+}
+.sort-filter {
+  display: flex;
+  align-items: center;
+}
+.sort-filter p {
+  display: flex;
+  align-items: center;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 0.2px;
+  color: #4b506d;
+  img {
+    margin-right: 9px;
+  }
+}
+.sort-filter p:nth-child(1) {
+  margin-right: 34px;
+}
+
+th {
+  font-size: 14px;
+  line-height: 18px;
+  letter-spacing: 0.2px;
+  color: #9fa2b4;
+}
+.ticket-detail {
+  display: flex;
+  align-items: center;
+  div {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    flex-direction: column;
+    margin-left: 24px;
+    width: 372px;
   }
-  .main-top-title {
-    font-weight: 700;
-    font-size: 19px;
-    line-height: 24px;
-    letter-spacing: 0.4px;
-    color: #252733;
-  }
-  .sort-filter {
-    display: flex;
-    align-items: center;
-  }
-  .sort-filter p {
-    display: flex;
-    align-items: center;
-    font-weight: 600;
-    font-size: 14px;
-    line-height: 20px;
-    letter-spacing: 0.2px;
-    color: #4b506d;
-    img{
-      margin-right: 9px;
-    }
-  }
-  .sort-filter p:nth-child(1){
-      margin-right: 34px;
-  }
+}
+
+.ticket-detail-title,
+.name,
+.date2 {
+  font-size: 18px;
+  line-height: 20px;
+  letter-spacing: 0.2px;
+  color: #252733;
+  margin-bottom: 4px;
+}
+.ticket-detail-subtitle,
+.date,
+.time {
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 0.1px;
+  color: #c5c7cd;
+}
+.priority {
+  font-size: 11px;
+  line-height: 14px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  color: #ffffff;
+  background: #f12b2c;
+  border-radius: 100px;
+  padding: 5px 12px;
+  margin-left: 30px;
+}
+.name-date{
+  width: 208px;
+}
+.date-time{
+  width: 140px;
+}
+tr{
+  display: flex;
+  align-items: center;
+}
+th:nth-child(1){
+  margin-right: 355px;
+}
+th:nth-child(2){
+  margin-right: 113px;
+}
+th:nth-child(3){
+  margin-right: 143px;
+}
+tr{
+height: 62px;
+}

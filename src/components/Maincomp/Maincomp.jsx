@@ -1,49 +1,28 @@
-import filter from "../../assets/icons/filter.svg";
-import sort from "../../assets/icons/sort.svg";
-import "./maincomp.scss"
-const Maincomp = ({ title, date, name, time, priority, avatar }) => {
+import "./maincomp.scss";
+const Maincomp = ({ title, date, name, time, priority, avatar}) => {
   return (
-    <div>
-      <div className="main-top">
-        <p className="main-top-title">All tickets</p>
-        <div className="sort-filter">
-          <p>
-            <img src={sort} alt="" />
-            Sort
-          </p>
-          <p>
-            <img src={filter} alt="" />
-            Filter
-          </p>
-        </div>
-      </div>
+    <div className="main-content">
       <div className="main-bot">
         <div className="card">
           <table>
-            <thead>
-              <tr>
-                <th>Ticket details</th>
-                <th>Customer name</th>
-                <th>Date</th>
-                <th>Priority</th>
-              </tr>
-            </thead>
             <tbody>
               <tr>
                 <td className="ticket-detail">
                   <img src={avatar} alt="" />
-                  <p>{title}</p>
-                  <p>Updated 1 day ago</p>
+                  <div>
+                    <p className="ticket-detail-title">{title}</p>
+                    <p className="ticket-detail-subtitle">Updated 1 day ago</p>
+                  </div>
                 </td>
-                <td>
-                  <p>{name}</p>
-                  <p>on 24.05.2019</p>
+                <td className="name-date">
+                  <p className="name">{name}</p>
+                  <p className="date">on 24.05.2019</p>
                 </td>
-                <td>
-                  {date}
-                  {time}
+                <td className="date-time">
+                  <p className="date2">{date}</p>
+                  <p className="time">{time}</p>
                 </td>
-                <td>{priority}</td>
+                <td className="priority">{priority}</td>
               </tr>
             </tbody>
           </table>
