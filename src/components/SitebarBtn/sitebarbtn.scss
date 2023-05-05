@@ -25,3 +25,11 @@
     }
   }
 }
+.active{
+  border-left: 3px solid #DDE2FF;
+  background: rgba(159, 162, 180, 0.08);
+  color: #DDE2FF;
+  .white-icon{
+    fill: #DDE2FF;
+  }
+}

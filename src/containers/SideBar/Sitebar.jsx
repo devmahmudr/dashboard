@@ -12,7 +12,6 @@ import {
   Ideas,
 } from "../../assets/icons/Icons";
 import { SiteLogoImg } from "../../assets/icons/search";
-
 const SiteBarBtnArr = [
   {
     title: "Overview",
@@ -53,7 +52,7 @@ const SiteBar = () => {
     <div className="sitebar">
       <SiteLogo logo={<SiteLogoImg />} logotitle="Dashboard Kit" />
       {SiteBarBtnArr.map((e) => {
-        return <SiteBarBtn key={Math.random()} icon={e.icon} title={e.title} />;
+        return <SiteBarBtn key={Math.random()} icon={e.icon} title={e.title}/>;
       })}
     </div>
   );
