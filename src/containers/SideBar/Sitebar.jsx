@@ -1,6 +1,7 @@
 import "./sitebar.scss";
 import SiteLogo from "../../components/Sitelogo/Sitelogo";
 import SiteBarBtn from "../../components/SitebarBtn/SitebarBtn";
+import {NavLink} from "react-router-dom"
 import {
   Overview,
   Settings,
@@ -52,7 +53,7 @@ const SiteBar = () => {
     <div className="sitebar">
       <SiteLogo logo={<SiteLogoImg />} logotitle="Dashboard Kit" />
       {SiteBarBtnArr.map((e) => {
-        return <SiteBarBtn key={Math.random()} icon={e.icon} title={e.title}/>;
+        return <NavLink to={e.title.toLocaleLowerCase()} ><SiteBarBtn key={Math.random()} icon={e.icon} title={e.title}/></NavLink>;
       })}
     </div>
   );

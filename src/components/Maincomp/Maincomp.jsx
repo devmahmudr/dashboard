@@ -1,5 +1,5 @@
 import "./maincomp.scss";
-const Maincomp = ({ title, date, name, time, priority, avatar}) => {
+const Maincomp = ({ title, date, name, time, priority, avatar }) => {
   return (
     <div className="main-content">
       <div className="main-bot">
